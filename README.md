@@ -23,7 +23,7 @@ TUŞLAR
 W-A-S-D  --> 1.OYUNCU İÇİN HAREKET  TUŞLARI 
 Q-E    --> 1. OYUNCU İÇİN TARET DÖNDÜRME
 SPACE(BOŞLUK) -->1. OYUNCU İÇİN  ATEŞ ETME
-İLERİ -GERİ -SAĞ-SOL  YÖN TUŞLARI--> 2. OYUNCU İÇİN HAREKET TUŞLARIÜ
+İLERİ -GERİ -SAĞ-SOL  YÖN TUŞLARI--> 2. OYUNCU İÇİN HAREKET TUŞLARI
 NUMPAD 1 - NUMPAD 3 TUŞLARI --> 2.. OYUNCU İÇİN TARET DÖNDÜRME
 NUMPAD 2 -->2. OYUNCU İÇİN ATEŞ ETME 
 
@@ -49,6 +49,5 @@ tree asset: https://www.turbosquid.com/3d-models/3d-model-tree-collection-198072
 
 explosion animation : https://github.com/Tvtig/RocketLauncher/blob/main/Assets/Tvtig/Rocket%20Launcher/Art/Textures/Explosion/Explosion.tif
 
-SCPIPTLERLE BİRLİKTE ASSETLERİ OLAN TÜM DOSYANIN GOOGLE DRIVE LINKI:  https://drive.google.com/file/d/1mHEhIZBbPycVDunnPphA_c2CwoO7Bhbq/view?usp=sharing
 
 
