@@ -34,3 +34,16 @@ GELİŞTİRDİĞİM KISIMLAR
 
 OYUN LİNKİ
 https://ahmet-talha-turkmen.itch.io/tanks-war
+
+OYUNDA KULLANILAN ASSETLERİN LİMKLERİ
+tank asset: https://www.turbosquid.com/3d-models/tank-model-1684359
+
+rock asset: https://ambientcg.com/view?id=3DRock004
+
+ground: https://ambientcg.com/view?id=Rock030 
+
+tank texture: https://ambientcg.com/view?id=Metal010
+
+tree asset: https://www.turbosquid.com/3d-models/3d-model-tree-collection-1980726
+
+explosion animation : https://github.com/Tvtig/RocketLauncher/blob/main/Assets/Tvtig/Rocket%20Launcher/Art/Textures/Explosion/Explosion.tif
