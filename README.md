@@ -13,8 +13,9 @@ Oyunda 2 çeşit buffer mevcut:
   -İkincisi Can artırma 
   
   OYUN İÇİ GÖRSELLER 
-![green-won](https://user-images.githubusercontent.com/75940377/204498386-90d8e7b5-02a9-4692-aff2-00e9dac0f61b.png)
+
 ![tankswar_screenshoot](https://user-images.githubusercontent.com/75940377/204498407-43168a44-88c7-4cd2-9803-4fbcfffbfda3.png)
+![green-won](https://user-images.githubusercontent.com/75940377/204498386-90d8e7b5-02a9-4692-aff2-00e9dac0f61b.png)
 
 
 TUŞLAR 
@@ -30,3 +31,6 @@ GELİŞTİRDİĞİM KISIMLAR
 
 2. OYUNCUNUN YAPTIĞI HAREKET SCRIPTLERİ
 2. OYUNCUNUN TEXT SCRIPTLERİ
+
+OYUN LİNKİ
+https://ahmet-talha-turkmen.itch.io/tanks-war
