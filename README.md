@@ -48,3 +48,7 @@ tank texture: https://ambientcg.com/view?id=Metal010
 tree asset: https://www.turbosquid.com/3d-models/3d-model-tree-collection-1980726
 
 explosion animation : https://github.com/Tvtig/RocketLauncher/blob/main/Assets/Tvtig/Rocket%20Launcher/Art/Textures/Explosion/Explosion.tif
+
+SCPIPTLERLE BİRLİKTE ASSETLERİ OLAN TÜM DOSYANIN GOOGLE DRIVE LINKI:  https://drive.google.com/file/d/1mHEhIZBbPycVDunnPphA_c2CwoO7Bhbq/view?usp=sharing
+
+
