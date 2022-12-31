@@ -56,4 +56,41 @@ public class pause_sc : MonoBehaviour
     {
         gameIsPaused = !gameIsPaused;
     }
+
+    public void OnMainMenuButtonClicked()
+    {
+        SavePlayerData();
+        SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
+
+    private void SavePlayerData()
+    {
+        PlayerPrefs.SetInt("Player1Lives", player1_sc.Instance.lives);
+        PlayerPrefs.SetInt("Player2Lives", player2_sc.Instance.lives);
+        
+        PlayerPrefs.SetFloat("Player1XPosition", player1_sc.Instance.transform.position.x);
+        PlayerPrefs.SetFloat("Player1YPosition", player1_sc.Instance.transform.position.y);
+        PlayerPrefs.SetFloat("Player1ZPosition", player1_sc.Instance.transform.position.z);
+
+        PlayerPrefs.SetFloat("Player2XPosition", player2_sc.Instance.transform.position.x);
+        PlayerPrefs.SetFloat("Player2YPosition", player2_sc.Instance.transform.position.y);
+        PlayerPrefs.SetFloat("Player2ZPosition", player2_sc.Instance.transform.position.z);
+
+        PlayerPrefs.SetFloat("Player1XRotation", player1_sc.Instance.transform.rotation.x);
+        PlayerPrefs.SetFloat("Player1YRotation", player1_sc.Instance.transform.rotation.y);
+        PlayerPrefs.SetFloat("Player1ZRotation", player1_sc.Instance.transform.rotation.z);
+
+        PlayerPrefs.SetFloat("Player2XRotation", player2_sc.Instance.transform.rotation.x);
+        PlayerPrefs.SetFloat("Player2YRotation", player2_sc.Instance.transform.rotation.y);
+        PlayerPrefs.SetFloat("Player2ZRotation", player2_sc.Instance.transform.rotation.z);
+
+        PlayerPrefs.SetFloat("P1TurretX", p1turret_sc.Instance.transform.eulerAngles.x);
+        PlayerPrefs.SetFloat("P1TurretY", p1turret_sc.Instance.transform.eulerAngles.y);
+        PlayerPrefs.SetFloat("P1TurretZ", p1turret_sc.Instance.transform.eulerAngles.z);
+
+        PlayerPrefs.SetFloat("P2TurretX", p2turret_sc.Instance.transform.eulerAngles.x);
+        PlayerPrefs.SetFloat("P2TurretY", p2turret_sc.Instance.transform.eulerAngles.y);
+        PlayerPrefs.SetFloat("P2TurretZ", p2turret_sc.Instance.transform.eulerAngles.z);
+
+    }
 }

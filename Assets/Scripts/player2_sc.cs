@@ -9,15 +9,21 @@ public class player2_sc : MonoBehaviour
     private AudioSource tank_sound;
 
     [SerializeField]
-    private float speed = 10;
+    public float speed = 10;
 
-    public float lives = 3;
+    public int lives = 3;
 
-
+    public static player2_sc Instance;
 
     void Start()
     {
+        if(Instance == null)
+            Instance = this;
 
+        if (PlayerPrefs.GetInt("Continue") == 1)
+        {
+            LoadData();
+        }
     }
 
     // Update is called once per frame
@@ -29,6 +35,17 @@ public class player2_sc : MonoBehaviour
         tankSound(horizontalInput, verticalInput);
 
     }
+
+    private void LoadData()
+    {
+        if (PlayerPrefs.HasKey("Player2Lives"))
+        {
+            lives = PlayerPrefs.GetInt("Player2Lives");
+            transform.position = new Vector3(PlayerPrefs.GetFloat("Player2XPosition"), PlayerPrefs.GetFloat("Player2YPosition"), PlayerPrefs.GetFloat("Player2ZPosition"));
+            transform.eulerAngles = new Vector3(PlayerPrefs.GetFloat("Player2XRotation"), PlayerPrefs.GetFloat("Player2YRotation"), PlayerPrefs.GetFloat("Player2ZRotation"));
+        }
+    }
+
     void tankControl(float horizontalInput, float verticalInput)
     {
         Vector3 direction = new Vector3(0, 0, horizontalInput);

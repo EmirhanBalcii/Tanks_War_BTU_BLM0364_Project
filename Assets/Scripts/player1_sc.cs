@@ -11,11 +11,19 @@ public class player1_sc : MonoBehaviour
     [SerializeField]
     private float speed = 10;
 
-    public float lives = 3;
+    public int lives = 3;
+
+    public static player1_sc Instance;
 
     void Start()
     {
+        if (Instance == null)
+            Instance = this;
 
+        if (PlayerPrefs.GetInt("Continue") == 1)
+        {
+            LoadData();
+        }
     }
 
     // Update is called once per frame
@@ -27,6 +35,17 @@ public class player1_sc : MonoBehaviour
         tankSound(horizontalInput, verticalInput);
 
     }
+
+    private void LoadData()
+    {
+        if (PlayerPrefs.HasKey("Player1Lives"))
+        {
+            lives = PlayerPrefs.GetInt("Player1Lives");
+            transform.position = new Vector3(PlayerPrefs.GetFloat("Player1XPosition"), PlayerPrefs.GetFloat("Player1YPosition"), PlayerPrefs.GetFloat("Player1ZPosition"));
+            transform.eulerAngles = new Vector3(PlayerPrefs.GetFloat("Player1XRotation"), PlayerPrefs.GetFloat("Player1YRotation"), PlayerPrefs.GetFloat("Player1ZRotation"));
+        }
+    }
+
     public void Damage()
     {
         lives--;

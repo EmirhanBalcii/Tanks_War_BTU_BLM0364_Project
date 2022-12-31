@@ -7,10 +7,18 @@ public class p2turret_sc : MonoBehaviour
 
     [SerializeField]
     private AudioSource turret_sound;
-    // Start is called before the first frame update
+
+    public static p2turret_sc Instance;
+
     void Start()
     {
+        if(Instance == null)
+            Instance = this;
 
+        if (PlayerPrefs.GetInt("Continue") == 1)
+        {
+            LoadData();
+        }
     }
 
     // Update is called once per frame
@@ -23,6 +31,15 @@ public class p2turret_sc : MonoBehaviour
         turretRotation(h);
         turretSound(h);
     }
+
+    private void LoadData()
+    {
+        if (PlayerPrefs.HasKey("P2TurretX"))
+        {
+            transform.eulerAngles = new Vector3(PlayerPrefs.GetFloat("P2TurretX"), PlayerPrefs.GetFloat("P2TurretY"), PlayerPrefs.GetFloat("P2TurretZ"));
+        }
+    }
+
     void turretRotation(float horizontalInput)
     {
         transform.Rotate(0, 0, horizontalInput);
